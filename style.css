@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #0d0d0d;
+color: white;
+}
+
+/* Navbar */
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 8%;
+background: #111;
+}
+
+.logo {
+font-size: 28px;
+color: white;
+}
+
+.logo span {
+color: #e50914;
+}
+
+.nav-links {
+display: flex;
+gap: 25px;
+list-style: none;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #e50914;
+}
+
+/* Hero */
+
+.hero {
+min-height: 550px;
+padding: 120px 8%;
+
+
+background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1400")
+    center / cover;
+
+
+}
+
+.hero-content {
+max-width: 650px;
+}
+
+.small-title {
+color: #e50914;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+
+.hero h2 {
+font-size: 58px;
+line-height: 1.05;
+margin-bottom: 20px;
+}
+
+.hero-content > p:not(.small-title) {
+color: #ddd;
+max-width: 500px;
+margin-bottom: 25px;
+}
+
+.hero-button {
+display: inline-block;
+background: #e50914;
+color: white;
+padding: 12px 22px;
+text-decoration: none;
+border-radius: 6px;
+transition: 0.3s;
+}
+
+.hero-button:hover {
+background: #b80710;
+transform: translateY(-2px);
+}
+
+/* Sections */
+
+section {
+padding: 70px 8%;
+}
+
+.section-heading {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.section-heading p {
+color: #e50914;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.section-heading h2 {
+font-size: 32px;
+margin-top: 5px;
+}
+
+/* Movie Cards */
+
+.movies-container {
+display: flex;
+justify-content: center;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.movie-card {
+width: 300px;
+background: #181818;
+border-radius: 10px;
+overflow: hidden;
+border: 1px solid #292929;
+transition: 0.3s;
+}
+
+.movie-card:hover {
+transform: translateY(-8px);
+border-color: #e50914;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.movie-image {
+height: 280px;
+background-size: cover;
+background-position: center;
+transition: 0.4s;
+}
+
+.movie-card:hover .movie-image {
+transform: scale(1.05);
+}
+
+/* Movie Images */
+
+.interstellar-image {
+background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600");
+}
+
+.inception-image {
+background-image: url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600");
+}
+
+.dark-knight-image {
+background-image: url("https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600");
+}
+
+.avatar-image {
+background-image: url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=600");
+}
+
+.titanic-image {
+background-image: url("https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=600");
+}
+
+/* Movie Information */
+
+.movie-info {
+padding: 20px;
+}
+
+.genre {
+color: #e50914;
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.movie-info h3 {
+font-size: 22px;
+margin: 7px 0;
+}
+
+.movie-info p {
+color: #aaa;
+min-height: 45px;
+}
+
+.movie-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 18px;
+}
+
+.movie-bottom > span {
+font-weight: bold;
+}
+
+.choose-btn {
+background: transparent;
+color: white;
+border: 1px solid #e50914;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.choose-btn:hover {
+background: #e50914;
+}
+
+/* Booking */
+
+.booking-wrapper {
+max-width: 900px;
+margin: auto;
+display: flex;
+gap: 40px;
+align-items: center;
+}
+
+.booking-text {
+flex: 1;
+}
+
+.booking-text > span {
+color: #e50914;
+font-size: 12px;
+font-weight: bold;
+}
+
+.booking-text h3 {
+font-size: 35px;
+margin: 12px 0;
+}
+
+.booking-text p {
+color: #aaa;
+}
+
+.booking-form {
+flex: 1;
+background: #181818;
+padding: 30px;
+border-radius: 10px;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+.form-row {
+display: flex;
+gap: 15px;
+}
+
+.form-row .form-group {
+flex: 1;
+}
+
+label {
+display: block;
+margin-bottom: 7px;
+font-size: 14px;
+}
+
+input,
+select {
+width: 100%;
+padding: 12px;
+background: #0d0d0d;
+color: white;
+border: 1px solid #444;
+border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+border-color: #e50914;
+outline: none;
+}
+
+.book-button {
+width: 100%;
+background: #e50914;
+color: white;
+border: none;
+padding: 13px;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.book-button:hover {
+background: #b80710;
+}
+
+/* Summary */
+
+.ticket-card {
+max-width: 650px;
+margin: auto;
+padding: 30px;
+background: white;
+color: #111;
+border-radius: 10px;
+}
+
+.ticket-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px dashed #aaa;
+padding-bottom: 20px;
+}
+
+.ticket-header span,
+.ticket-details span,
+.ticket-price span {
+display: block;
+color: #777;
+font-size: 12px;
+}
+
+.ticket-header strong {
+font-size: 22px;
+}
+
+.ticket-logo {
+font-weight: bold;
+font-size: 20px;
+}
+
+.ticket-logo span {
+color: #e50914;
+}
+
+.ticket-details {
+display: flex;
+justify-content: space-between;
+margin: 25px 0;
+}
+
+.ticket-price {
+display: flex;
+justify-content: space-between;
+border-top: 1px solid #ddd;
+padding-top: 20px;
+}
+
+.ticket-price strong {
+color: #e50914;
+font-size: 25px;
+}
+
+.status {
+text-align: center;
+margin-top: 20px;
+padding: 8px;
+background: #d9f7df;
+color: green;
+border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+text-align: center;
+padding: 35px;
+background: #080808;
+color: #aaa;
+}
+
+.footer-logo {
+font-size: 24px;
+color: white;
+margin-bottom: 8px;
+}
+
+.footer-logo span {
+color: #e50914;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero {
+    padding: 100px 8%;
+}
+
+.hero h2 {
+    font-size: 42px;
+}
+
+.booking-wrapper {
+    flex-direction: column;
+}
+
+.booking-text,
+.booking-form {
+    width: 100%;
+}
+
+.form-row {
+    flex-direction: column;
+    gap: 0;
+}
+
+
+}
+
+@media (max-width: 500px) {
+
+
+.nav-links {
+    gap: 12px;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+}
+
+.movie-card {
+    width: 100%;
+}
+
+.ticket-details {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+}
